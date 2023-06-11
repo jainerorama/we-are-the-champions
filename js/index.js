@@ -17,16 +17,12 @@ const endorsementsInDB = ref(database, "endorsements")
 const textAreaEl = document.querySelector("#textarea")
 const publishBtnEl = document.querySelector("#publish-btn")
 const endorsementEl = document.querySelector("#endorsements-section")
-const inputFromEl = document.querySelector("#input-from")
-const inputToEl = document.querySelector("#input-to")
 
 publishBtnEl.addEventListener("dblclick", function () {
     
     const textAreaValue = textAreaEl.value
-    const inputFromValue = inputFromEl.value
-    const inputToEl = inputToEl.value
-
-    push(endorsementsInDB, textAreaValue, inputFromValue, inputToEl)
+ 
+    push(endorsementsInDB, textAreaValue)
 
     cleanTextValue()
 })
