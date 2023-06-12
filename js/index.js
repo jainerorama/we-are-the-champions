@@ -18,7 +18,7 @@ const textAreaEl = document.querySelector("#textarea")
 const publishBtnEl = document.querySelector("#publish-btn")
 const endorsementEl = document.querySelector("#endorsements-section")
 
-publishBtnEl.addEventListener("dblclick", function () {
+publishBtnEl.addEventListener("click", function () {
     
     const textAreaValue = textAreaEl.value
  
